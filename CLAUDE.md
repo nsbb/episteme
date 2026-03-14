@@ -1,7 +1,7 @@
 # Episteme — Global Development Axioms & Doctrine
 
 이 파일은 `build_claude_md.sh`로 자동 생성됩니다. 직접 수정하지 마세요.
-수정하려면 `05_axiom/` 또는 `04_doctrine/` 파일을 편집 후 `./build_claude_md.sh` 실행.
+수정하려면 `01_axiom/` 또는 `02_doctrine/` 파일을 편집 후 `./build_claude_md.sh` 실행.
 
 ---
 
@@ -39,5 +39,5 @@
 
 ---
 
-_하위 계층 (03_premise, 02_praxis, 01_postmortem)은 각 프로젝트의 CLAUDE.md에서 필요시 참조._
+_하위 계층 (03_premise, 04_praxis, 05_postmortem)은 각 프로젝트의 CLAUDE.md에서 필요시 참조._
 _승급: postmortem → praxis → premise → doctrine → axiom. 2개 이상 프로젝트에서 검증되면 승급 대상._

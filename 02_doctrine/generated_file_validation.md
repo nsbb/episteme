@@ -1,8 +1,8 @@
 ---
 id: DC-002
 level: doctrine
-promoted_to: 05_axiom/verify_generated_files.md
-origin_postmortem: 01_postmortem/2026-03-14_vocab_offset_bug.md
+promoted_to: 01_axiom/verify_generated_files.md
+origin_postmortem: 05_postmortem/2026-03-14_vocab_offset_bug.md
 applied_in: [T527-KoCitrinet]
 ---
 

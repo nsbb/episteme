@@ -3,7 +3,7 @@ id: AX-003
 level: axiom
 promoted_from: null
 promoted_date: 2026-03-14
-origin_postmortem: 01_postmortem/2026-03-14_vocab_offset_bug.md
+origin_postmortem: 05_postmortem/2026-03-14_vocab_offset_bug.md
 applied_in: [T527-KoCitrinet]
 ---
 

@@ -1,9 +1,9 @@
 ---
 id: AX-002
 level: axiom
-promoted_from: 04_doctrine/generated_file_validation.md
+promoted_from: 02_doctrine/generated_file_validation.md
 promoted_date: 2026-03-14
-origin_postmortem: 01_postmortem/2026-03-14_vocab_offset_bug.md
+origin_postmortem: 05_postmortem/2026-03-14_vocab_offset_bug.md
 applied_in: [T527-KoCitrinet]
 ---
 

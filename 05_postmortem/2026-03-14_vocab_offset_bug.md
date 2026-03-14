@@ -6,10 +6,10 @@ severity: critical
 time_wasted: ~2 days
 root_cause: vocab_ko.txt index 0에 <unk> 누락 → 전체 토큰 1칸 오프셋
 promoted_to:
-  - 04_doctrine/data_before_code.md
-  - 04_doctrine/generated_file_validation.md
-  - 05_axiom/debugging_order.md
-  - 05_axiom/verify_generated_files.md
+  - 02_doctrine/data_before_code.md
+  - 02_doctrine/generated_file_validation.md
+  - 01_axiom/debugging_order.md
+  - 01_axiom/verify_generated_files.md
 ---
 
 # vocab_ko.txt 1-token 오프셋 버그
