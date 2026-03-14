@@ -1,8 +1,10 @@
 ---
 id: AX-002
+level: axiom
 promoted_from: 04_doctrine/generated_file_validation.md
 promoted_date: 2026-03-14
-origin: 2026-03-14 vocab_ko.txt 생성 시 index 0 누락 미검증 → 2일 낭비
+origin_postmortem: 01_postmortem/2026-03-14_vocab_offset_bug.md
+applied_in: [T527-KoCitrinet]
 ---
 
 # 파생 파일은 생성 직후 원본과 대조 검증하라

@@ -1,7 +1,9 @@
 ---
 id: DC-002
+level: doctrine
 promoted_to: 05_axiom/verify_generated_files.md
-origin: 2026-03-14 vocab_ko.txt tokenizer.model에서 생성 시 <unk> 누락
+origin_postmortem: 01_postmortem/2026-03-14_vocab_offset_bug.md
+applied_in: [T527-KoCitrinet]
 ---
 
 # 파생 파일 생성 직후 검증 체크리스트

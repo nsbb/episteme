@@ -1,8 +1,10 @@
 ---
 id: AX-003
+level: axiom
 promoted_from: null
 promoted_date: 2026-03-14
-origin: 반복적 경험 — 복잡한 원인을 먼저 의심해서 시간 낭비하는 패턴
+origin_postmortem: 01_postmortem/2026-03-14_vocab_offset_bug.md
+applied_in: [T527-KoCitrinet]
 ---
 
 # 가장 단순한 가설부터 확인하라

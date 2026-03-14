@@ -1,7 +1,9 @@
 ---
 id: DC-001
+level: doctrine
 promoted_to: 05_axiom/debugging_order.md
-origin: 2026-03-14 T527 KoCitrinet vocab_ko.txt
+origin_postmortem: 01_postmortem/2026-03-14_vocab_offset_bug.md
+applied_in: [T527-KoCitrinet]
 ---
 
 # 디버깅 순서: 데이터 → 코드 → 전처리
