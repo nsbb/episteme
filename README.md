@@ -24,6 +24,30 @@
  ╲────────────────╱
 ```
 
+### 계층별 기호 (논리학/수학 유니코드)
+
+| 계층 | 기호 | 유니코드 | 출처 | 의미 |
+|------|------|----------|------|------|
+| 01 Axiom | ⊤ | U+22A4 | 논리학 Verum | "항상 참" — 공리는 증명 없이 참 |
+| 02 Doctrine | □ | U+25A1 | 양상논리 필연 | "반드시 참" — 의무 적용 표준 |
+| 03 Premise | ∵ | U+2235 | 수학 증명 | "왜냐하면" — 전제를 진술할 때 사용 |
+| 04 Praxis | λ | U+03BB | 람다 대수 | 함수/계산 — 실행 가능한 도구 |
+| 05 Postmortem | † | U+2020 | 학술 표기 | Dagger — 라틴어 "죽음 이후" |
+| Episteme | ∴ | U+2234 | 수학 증명 | "고로" — 지식의 최종 결론 |
+
+**기타 관련 기호:**
+
+| 기호 | 유니코드 | 용도 |
+|------|----------|------|
+| ⊢ | U+22A2 | Turnstile — `⊢P` = "P는 공리/정리" |
+| ∀ | U+2200 | 전칭 한정사 — "모든 ~에 대해" (Axiom의 보편성) |
+| Γ | U+0393 | 감마 — 형식논리에서 공리/전제 집합 표기 |
+| ⊨ | U+22A8 | Double turnstile — "의미론적으로 타당" (Doctrine 검증) |
+| ◇ | U+25C7 | 양상논리 가능 — "참일 수 있다" (Premise의 반증 가능성) |
+| → | U+2192 | 함축/사상 — 입력→출력 (Praxis의 변환) |
+| ∃ | U+2203 | 존재 한정사 — "~인 경우가 존재한다" (Postmortem의 구체적 사건) |
+| ⊥ | U+22A5 | Falsum — 모순/실패 (Postmortem의 장애 기록) |
+
 ### 01 — Axiom (공리)
 
 - **어원**: 그리스어 *ἀξίωμα* (axiōma) = "가치 있다고 여겨지는 것". 증명 없이 참으로 받아들이는 출발점.
@@ -112,11 +136,16 @@ applied_in: [T527-KoCitrinet]
 ### 커밋 컨벤션
 
 ```
-[PROMOTION] postmortem → praxis: PM-001에서 verify 스크립트 추출
-[PROMOTION] doctrine → axiom: "파생 파일은 생성 직후 검증하라"
-[DEMOTION] axiom → doctrine: 반례 발견 — {설명}
-[episteme] deviceA: auto-sync 2026-03-14_15:30
-[episteme] deviceA: rebuild CLAUDE.md
+[⊤ AXIOM] "파생 파일은 생성 직후 검증하라"
+[□ DOCTRINE] 파생 파일 검증 의무화
+[∵ PREMISE] NPU 메모리 관리 thread-unsafe 전제
+[λ PRAXIS] verify_derived_file.sh 추출
+[† POSTMORTEM] vocab_ko.txt offset 버그
+[PROMOTION] † → λ: PM-001에서 verify 스크립트 추출
+[PROMOTION] □ → ⊤: "파생 파일은 생성 직후 검증하라"
+[DEMOTION] ⊤ → □: 반례 발견 — {설명}
+[∴ episteme] deviceA: auto-sync 2026-03-14_15:30
+[∴ episteme] deviceA: rebuild CLAUDE.md
 ```
 
 ### 강등(Demotion) 및 폐기
