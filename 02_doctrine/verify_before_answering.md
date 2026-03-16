@@ -1,6 +1,7 @@
 ---
 id: DC-003
 level: doctrine
+promoted_to: 01_axiom/verify_before_claiming.md
 origin_postmortem: 05_postmortem/2026-03-16_bcresnet_false_int8_claim.md
 applied_in: [RK3588-wakeword, RK3588-stt]
 ---
