@@ -1,6 +1,9 @@
 ---
-id: DC-008
-level: doctrine
+id: PX-005
+level: praxis
+demoted_from: 02_doctrine/git_sync_before_push.md
+demoted_date: 2026-03-17
+demoted_reason: origin_postmortem 없이 doctrine 생성 — 사건 기반 아닌 운영 규칙
 applied_in: [all]
 ---
 

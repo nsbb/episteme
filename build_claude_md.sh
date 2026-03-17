@@ -24,6 +24,7 @@ HEADER
 # Axioms
 for f in 01_axiom/*.md; do
   [ -f "$f" ] || continue
+  [ "$(basename "$f")" = "README.md" ] && continue
   # frontmatter 제거하고 본문만 추출
   sed -n '/^---$/,/^---$/!p' "$f" | sed '/^$/d' >> "$OUT"
   echo "" >> "$OUT"
@@ -39,6 +40,8 @@ MID
 # Doctrine
 for f in 02_doctrine/*.md; do
   [ -f "$f" ] || continue
+  [ "$(basename "$f")" = "README.md" ] && continue
+  # frontmatter 제거하고 본문만 추출
   sed -n '/^---$/,/^---$/!p' "$f" | sed '/^$/d' >> "$OUT"
   echo "" >> "$OUT"
 done

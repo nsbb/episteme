@@ -5,7 +5,7 @@ project: ondevice-research
 severity: minor
 time_wasted: ~30min
 root_cause: Co-Authored-By 트레일러가 GitHub contributor 목록에 반영됨
-promoted_to: []
+promoted_to: [04_praxis/git_no_ai_trace.md]
 ---
 
 # Git Co-Authored-By → GitHub Contributor 노출

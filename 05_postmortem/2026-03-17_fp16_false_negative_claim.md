@@ -4,7 +4,7 @@ date: 2026-03-17
 project: T527-STT
 severity: high
 resolved: true
-promoted_to: 02_doctrine/negative_claims_higher_bar.md
+promoted_to: [04_praxis/negative_claims_higher_bar.md, 04_praxis/error_response_protocol.md]
 ---
 
 # fp16 지원을 "없다"고 단정한 오류

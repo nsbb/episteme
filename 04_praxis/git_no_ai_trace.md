@@ -1,6 +1,9 @@
 ---
-id: DC-004
-level: doctrine
+id: PX-001
+level: praxis
+demoted_from: 02_doctrine/git_no_ai_trace.md
+demoted_date: 2026-03-17
+demoted_reason: postmortem 1건에서 바로 doctrine 승급 — 승급 조건(3개+ 프로젝트 검증) 미충족
 origin_postmortem: 05_postmortem/2026-03-16_git_coauthor_contributor.md
 applied_in: [ondevice-research]
 ---

@@ -1,6 +1,9 @@
 ---
-id: DC-006
-level: doctrine
+id: PX-003
+level: praxis
+demoted_from: 02_doctrine/error_response_protocol.md
+demoted_date: 2026-03-17
+demoted_reason: postmortem 1건에서 바로 doctrine 승급 — 승급 조건 미충족
 origin_postmortem: 05_postmortem/2026-03-17_fp16_false_negative_claim.md
 applied_in: [T527-STT]
 ---
