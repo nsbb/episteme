@@ -57,3 +57,15 @@
 - **원인:** 중간 폴더에 README.md 없음 + SDK 레벨 문서를 모델 폴더에 배치
 - **교훈:** 문서는 존재하는 것만으로 부족, 발견 가능해야 한다. 모든 폴더에 README.md, 상위에서 하위 문서 링크 필수.
 - **승급:** → PR-001
+
+---
+
+## PM-005 (2026-03-17) — RKNN Squeeze 버그로 모델 출력 전부 blank
+
+- **프로젝트:** RK3588-KoCitrinet
+- **심각도:** critical | **낭비 시간:** ~3시간
+- **증상:** RKNN FP16 변환 성공, 추론 시 전부 blank 토큰. random input에서는 cosine 0.997로 정상처럼 보임
+- **원인:** **RKNN이 Squeeze(axis=2)를 내부 NHWC 레이아웃의 axis에 적용** → 출력 데이터 완전히 뒤섞임. Reshape으로 교체해도 동일 실패
+- **해결:** 모델 I/O를 3D로 변경하여 Squeeze/Unsqueeze 완전 제거 → cosine 0.999935
+- **교훈:** random input 검증을 과신하면 안 된다. 실제 데이터로 반드시 재검증. Bisection이 최고의 디버깅 도구.
+- **승급:** → PR-002 (Squeeze 사용 금지), PR-003 (random vs real 검증)
