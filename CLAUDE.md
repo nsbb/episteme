@@ -69,6 +69,14 @@ Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
 2. GitHub 캐시가 안 풀리면: 레포 삭제 → 동일 이름 빈 레포 재생성 → `git push`
 3. 로컬에 모든 데이터가 보존되므로 손실 없음
 
+# git push 전에 반드시 원격과 동기화 확인
+여러 세션/디바이스/폴더에서 동일 레포에 접근할 수 있으므로, push 전에 반드시:
+1. `git fetch origin` — 원격 최신 상태 가져오기
+2. `git log HEAD..origin/BRANCH --oneline` — 내가 놓친 커밋 확인
+3. 놓친 커밋이 있으면 `git pull --rebase` 후 push
+4. 충돌 발생 시 유저에게 보고 후 진행
+push 실패 시 `--force` 하지 말고 원인 먼저 파악할 것.
+
 # 부정 주장(없다/불가능/미지원)은 긍정 주장보다 높은 검증 기준을 적용하라
 "~없다", "~안 된다", "~지원하지 않는다" 같은 부정 주장은 반드시 아래 전부를 확인한 후에만 말할 것:
 1. **문서** — README, 공식 가이드
