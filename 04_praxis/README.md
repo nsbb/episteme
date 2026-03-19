@@ -31,3 +31,9 @@
 
 - **내용:** push 전 fetch → 놓친 커밋 확인 → pull --rebase 후 push
 - **적용:** all
+
+## PX-006 — 한글 포함 ASCII 다이어그램 정렬 검증
+
+- **출처:** rknn-pipeline README 다이어그램 정렬 반복 실패
+- **내용:** unicodedata.east_asian_width()로 display width 계산 + Pillow로 이미지 렌더링하여 시각 확인
+- **적용:** rknn-pipeline
