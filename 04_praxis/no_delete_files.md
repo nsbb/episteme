@@ -1,6 +1,6 @@
 ---
-id: DC-003
-level: doctrine
+id: PX-001
+level: praxis
 created_date: 2026-03-25
 ---
 
