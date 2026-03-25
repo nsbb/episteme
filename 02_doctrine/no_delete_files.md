@@ -1,6 +1,6 @@
 ---
-id: AX-004
-level: axiom
+id: DC-003
+level: doctrine
 created_date: 2026-03-25
 ---
 
