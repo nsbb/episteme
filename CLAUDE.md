@@ -14,6 +14,30 @@
 규칙을 읽었다고 지키고 있는 것이 아니다.
 매 실행 시점에 확인하지 않으면 습관이 규칙을 이긴다.
 
+# 프레임워크가 없으면 설치하지 말고 환경을 먼저 찾아라
+NeMo, PyTorch, TensorFlow, Acuity, ONNX Runtime 같은 **프레임워크 수준 라이브러리**가
+로컬에 없다고 바로 `pip install` 하지 마라.
+## 왜?
+- 이미 Docker 이미지나 conda env에 올바른 버전이 설치되어 있을 확률이 높다.
+- 로컬에 아무 버전이나 설치하면 **버전 불일치**로 이전에 성공했던 파이프라인이 깨진다.
+- 실제 사례: 로컬 NeMo(1.20.0)로 ONNX export → Acuity import 실패. NeMo Docker(23.06)로 하면 성공.
+- 실제 사례: torchvision을 로컬에 설치 → 의존성 꼬임.
+## 규칙
+1. **프레임워크가 없다면 먼저 확인:**
+   - `docker images` → 관련 Docker 이미지
+   - `docker ps -a` → 중지된 컨테이너
+   - `conda env list` → conda 환경
+   - 프로젝트 문서 (CLAUDE.md, README) → 지정된 환경
+2. **환경이 있으면 그 안에서 실행.** 로컬에 설치하지 마라.
+3. **환경이 정말 없으면** 사용자에게 먼저 확인. "Docker에 OOO 환경 있나요?" 물어라.
+4. **작은 유틸리티 라이브러리**(jq, csvkit 등)는 로컬 설치 OK. 프레임워크만 해당.
+## 프레임워크 vs 유틸리티 구분
+**프레임워크 (로컬 설치 금지):**
+NeMo, PyTorch, TensorFlow, torchvision, torchaudio, ONNX Runtime,
+Acuity Toolkit, RKNN Toolkit, TensorRT, HuggingFace Transformers
+**유틸리티 (로컬 설치 OK):**
+onnx, onnxsim, numpy, scipy, librosa, jinja2, pyyaml, csvkit
+
 # 가장 단순한 가설부터 확인하라
 파일 누락, 오타, 인덱스 오프셋을 먼저 확인한 뒤에 라이브러리 내부 동작, 하드웨어 차이, 부동소수점 정밀도를 의심하라.
 
